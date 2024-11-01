@@ -1,0 +1,30 @@
+#seor_redirects .inside p {
+    display: flex;
+    align-items: center;
+}
+#seor_redirects .inside span {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    opacity: 0.3;
+    cursor: pointer;
+    margin-left: 10px;
+    display: inline-block;
+}
+#seor_redirects .inside span:hover {
+    opacity: 1;
+}
+#seor_redirects .inside span:before, #seor_redirects .inside span:after {
+    position: absolute;
+    left: 10px;
+    content: ' ';
+    height: 18px;
+    width: 2px;
+    background-color: red;
+}
+#seor_redirects .inside span:before {
+    transform: rotate(45deg);
+}
+#seor_redirects .inside span:after {
+    transform: rotate(-45deg);
+}
